@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rafael do Nascimento">
     <link rel="stylesheet" href="css/stillus.css">
+    <link rel="stylesheet" href="css/funciona.css">
+    <script src="js/idade.js"></script>
     <title>Túnel do tempo</title>
 </head>
 <body>
@@ -13,35 +15,42 @@
     
     <header>
         <figure>
-            <img class="logo" src="images/piorqueé.jpg" alt="Sumiu a imagem"
+            <img class="logo" src="images/panda.png" alt="Sumiu a imagem"
                 title="Este é o meu logo">
         </figure>
 
         <nav>
             <a href="#">Home</a>
-            <a href="#">Dicas</a>
+            <a href="#">Calculadora</a>
             <a href="#">Contato</a>
         </nav>
     </header>
     
     
-    <main>
-        <section>
-            Informações sobre o Projeto
+    <main class="divisor">
+        <section class="texto">
+            <h2>Informações do Projeto</h2>
+            <p>Este projeto visa desenvolver javascript em páginas com HTML e CSS</p>
         </section>
 
         <section>
-            <h2>Direto do túnel do tempo</h2>
-            <form>
-                Nome
-                <input type="text" id="nome" name="nome" 
-                   required placeholder="Digite seu nome">
-                Idade
-                <input type="number" id="idade" name="idade"
-                   required placeholder="Informe apenas número para a idade">
-                <input type="button" id="btn1" value="Novo">
-                <input type="button" id="btn2" value="Velho">
-                <textarea>
+            <form class="form">
+                 Nome
+                 <input type="text" id="form-input" name="nome" 
+                    required placeholder="Digite seu nome">
+                 Idade
+                 <input type="number" id="form-input-idade" name="idade" 
+                    required placeholder="Digite sua idade">
+                 Idade Futura
+                 <input type="text" id="form-input" name="IdadeFutura"
+                    disabled placeholder="Aqui não aceita nada">
+                <section class="form-button">
+                    <button onclick="carregaJovem()"></button>
+                <button id="botao1">Novo</button>
+                <button id="botao2">Velho</button>
+                </section><section class="images">
+                <section id="novo"></section>
+                <section id="idoso"></section></section>
             </form>
         </section>
 
@@ -49,7 +58,8 @@
     
     
     <footer>
-        <p>Rafael do Nascimento &copy;</p>
+        <p>&copy; Direitos Autorais
+            <a href="mailto:rafael.nascimento202@etec.sp.gov.br">Rafael do Nascimento</p></a>
         
     
     
